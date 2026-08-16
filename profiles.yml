@@ -1,0 +1,25 @@
+answers:
+  outputs:
+    dev:
+      dataset: my_dataset
+      keyfile: "C:/Users/hayeo/OneDrive/\uD558\uC5EC\uC9C4/it/cogent-metric-434206-h9-ad47cb19074a.json"
+      location: US
+      method: service-account
+      project: cogent-metric-434206-h9
+      threads: 4
+      timeout_seconds: 300
+      type: bigquery
+  target: dev
+lessons:
+  outputs:
+    dev:
+      dataset: dbt_yeojin
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: dbtproject-505310
+      threads: 60
+      type: bigquery
+  target: dev
